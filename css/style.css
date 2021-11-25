@@ -2931,14 +2931,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 /******** header css end *********/
 /* line 285, H:/admin_project/finance/scss/_header.scss */
 .serach_field-area {
-  width: 480px;
+  width: 66%;
   position: relative;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 285, H:/admin_project/finance/scss/_header.scss */
   .serach_field-area {
-    width: 400px;
+    width: 66%;
   }
 }
 
@@ -3101,17 +3101,14 @@ table.dataTable {
 /* line 2, H:/admin_project/finance/scss/_sidebar.scss */
 .sidebar {
   height: 100vh;
-  left: 0;
-  top: 0;
   z-index: 99;
   padding-bottom: 50px;
-  position: fixed;
   width: 270px;
   z-index: 999;
   overflow: hidden;
   overflow-y: auto;
   transition: 0.5s;
-  background: transparent;
+  background: #fff;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -3860,7 +3857,6 @@ body::-webkit-scrollbar {
 /******** main content css here *********/
 /* line 2, H:/admin_project/finance/scss/_main_content.scss */
 .main_content {
-  padding-left: 270px;
   width: 100%;
   padding-top: 0px !important;
   transition: .5s;
@@ -7371,6 +7367,26 @@ canvas#highlights {
   border: 1px solid #828BB2;
   transition: .3s;
   transform: scale(1);
+}
+
+.sidemenu {
+  position: fixed;
+  z-index: 999;
+  background-color: #fafafa;
+  left: -500px;
+  transition:all linear 0.2s;
+}
+
+.sidemenu.active {
+  left: 0;
+  top: 0;
+}
+
+#menu-toggle {
+  position: relative;
+  z-index: 100;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
